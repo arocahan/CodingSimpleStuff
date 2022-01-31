@@ -1,3 +1,4 @@
+import java.time.temporal.Temporal;
 
 public class App {
 
@@ -38,11 +39,20 @@ public class App {
         Student[] Group1 = {John, Peter, Mary};
 
         //System.out.println("My name is " + Peter.getName() + " and I got " + Peter.getMathgrade() + " in Math last year");
+        //System.out.println("My name is " + John.getName() + " and it is " + John.MathIMadeItOrNot() + " that I passed Math");
 
 
-        System.out.println("My name is " + John.getName() + " and it is " + John.MathIMadeItOrNot() + " that I passed Math");
+        int [] TestArray1 = {4, 5, 6, 3, 7, 2, 9};
 
+        for (int i = 0; i<TestArray1.length; i++){
+            System.out.println(TestArray1[i]);
+        }
 
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+
+        for (int number : TestArray1){
+            System.out.print(number);
+        }
 
     }
 }
