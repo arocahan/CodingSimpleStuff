@@ -1,7 +1,6 @@
-import java.time.temporal.Temporal;
+import java.util.ArrayList;
 
 public class App {
-
 
     public static void main(String[] args) {
 /*
@@ -24,17 +23,17 @@ public class App {
         Student Peter = new Student("Peter Pan", 15, "Male", 55);
         Student Mary = new Student("Mary Jane", 22, "Female", 99);
 
-
+/*
         John.setAge(46);
         Peter.setAge(16);
 
-        //System.out.println("I am " + John.getAge() + " years old");
-        //System.out.println("I am on the other hand " + Peter.getAge() + " years old");
+        System.out.println("I am " + John.getAge() + " years old");
+        System.out.println("I am on the other hand " + Peter.getAge() + " years old");
 
-        //System.out.println("I am Peter and I am so far a " + Peter.getGender());
-        //Peter.setGender("Female");
-        //System.out.println("*********************************************");
-        //System.out.println("You know what I am still Peter but surprise I am not longer a Dude, now I am a " + Peter.getGender());
+        System.out.println("I am Peter and I am so far a " + Peter.getGender());
+        Peter.setGender("Female");
+        System.out.println("*********************************************");
+        System.out.println("You know what I am still Peter but surprise I am not longer a Dude, now I am a " + Peter.getGender());
 
         Student[] Group1 = {John, Peter, Mary};
 
@@ -42,6 +41,8 @@ public class App {
         //System.out.println("My name is " + John.getName() + " and it is " + John.MathIMadeItOrNot() + " that I passed Math");
 
 
+ */
+        /*
         int [] TestArray1 = {4, 5, 6, 3, 7, 2, 9};
 
         for (int i = 0; i<TestArray1.length; i++){
@@ -54,6 +55,28 @@ public class App {
             System.out.print(number);
         }
 
+
+         */
+
+        ArrayList<Student> GermanClassroom = new ArrayList<Student>();
+        GermanClassroom.add(John);
+        GermanClassroom.add(1, Mary);
+        //System.out.println(GermanClassroom.get(2).getName());
+
+        //While vs DoWhile
+
+        int counter = 0;
+
+        while(counter == 10){
+            System.out.println( counter + " Hello World");
+            counter++;
+        }
+        System.out.println("*******************************************************");
+
+        int counter2 = 0;
+        do {
+            System.out.print(counter2 + " Hola Mundo ");
+            counter2++;
+        } while (counter2 == 10);
     }
 }
-
